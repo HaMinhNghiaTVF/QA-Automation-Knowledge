@@ -1,0 +1,17 @@
+{
+	"nodes":[
+		{"id":"ab6e8a204a646cfa","type":"text","text":"BA Spec","x":-462,"y":-336,"width":250,"height":60},
+		{"id":"870b44101d1a5030","type":"text","text":"Test Case Checklist","x":59,"y":-336,"width":201,"height":60},
+		{"id":"1eab67a1542b483c","type":"text","text":"- Feature files (Gherkin Language)\n- DOM yaml","x":7,"y":-40,"width":305,"height":80},
+		{"id":"d5ca27f7906d0d92","type":"text","text":"- POM (Page Object Model)\n- Locators","x":35,"y":180,"width":250,"height":60},
+		{"id":"1cc401974da16b1b","type":"text","text":"Step Definition","x":540,"y":180,"width":250,"height":60},
+		{"id":"51cfb5ea4c7fcf9c","type":"text","text":"Show report (2 formats for dev + QA)","x":540,"y":348,"width":250,"height":60}
+	],
+	"edges":[
+		{"id":"64069e9b8b439be9","fromNode":"ab6e8a204a646cfa","fromSide":"right","toNode":"870b44101d1a5030","toSide":"left","label":"spec-generator"},
+		{"id":"bda73cd55dc5807d","fromNode":"870b44101d1a5030","fromSide":"bottom","toNode":"1eab67a1542b483c","toSide":"top","label":"feature-builder (with url)"},
+		{"id":"29ab67d89a8976b3","fromNode":"1eab67a1542b483c","fromSide":"bottom","toNode":"d5ca27f7906d0d92","toSide":"top","label":"pom-builder"},
+		{"id":"abb4b3d3b3971be1","fromNode":"d5ca27f7906d0d92","fromSide":"right","toNode":"1cc401974da16b1b","toSide":"left","label":"step-builder"},
+		{"id":"b3399788b01c03f2","fromNode":"1cc401974da16b1b","fromSide":"bottom","toNode":"51cfb5ea4c7fcf9c","toSide":"top","label":"run test"}
+	]
+}
